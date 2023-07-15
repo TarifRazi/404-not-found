@@ -59,7 +59,7 @@ header {
 }
 
 .image {
-    width: 50%;
+    width: calc((100% - 77px)/2);
 }
 
 .text {
@@ -85,4 +85,31 @@ small span a{
     color: #BDBDBD;
     font-size: 14px;
     font-weight: 500;
+}
+
+@media screen and (max-width: 576px) {
+
+    header{
+        width: 524px;
+        display: flex;
+        flex-direction: column;
+        padding: 40px 16px;
+    }
+
+    .element-cont{
+        /* display: flex; */
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .image{
+        width: 100%;
+    }
+
+    .text{
+        width: 100%;
+        margin: 0%;
+        /* padding-left: 24px; */
+    }
+    
 }
